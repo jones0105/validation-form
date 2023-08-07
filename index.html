@@ -1,0 +1,94 @@
+<!DocType html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"  content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/media.css">
+		<title>JS</title>
+		
+	</head>
+
+ <body>
+      
+ <section id="form-section">
+     <div class="form-container">
+          <div class="from-head">    
+            <h1>Regestration From</h1>
+         </div>
+      <form name="registration" onsubmit="return validateForm()">
+      <div class="from-row">
+           <div class="form-col">
+              <div class="input-filed">
+                <label for="first name">First Name</label><br>
+                <input type="text"name="fname" id="first-name" placeholder="Enter First Name"><span id="entername" style="color: rgb(255, 45, 45); display:none;">Please Enter Your Name</span>
+              </div>
+              <div class="error"></div>
+
+              <div class="input-filed">
+                <label for="reg-email">Email</label><br>
+                <input for="reg-email" id="email" type="email" placeholder="Enter you Email Id"><span id="enteremail" style="color: red; display:none;">Please Enter Your Email</span>
+             </div>   
+             <div class="error"></div>
+
+                <div class="input-filed">
+                    <label for="reg-password">Password</label><br>
+                    <input for="reg-password" id="password" type="password" placeholder="Enter you Email Password"><span id="enterpassword" style="color: red; display:none;">Please Enter Your password</span>
+                  <span id="enterpassword1" style="color: red; display:none;">Minimum 8 charecters</span>
+                </div>
+
+              <div class="error"></div>
+              
+            </div>
+
+           <div class="form-col">
+            <div class="input-filed">
+              <label for="phone-number">Phone Number</label><br>
+              <input for="phone-number" id="phone-number" placeholder="Enter your phone number"><span id="pn" style="color: red; display:none;">Enter Your Phone Number</span>
+              <span id="pnn" style="color: red; display:none;">please enter valid number </span>
+            </div>
+            <div class="error"></div>
+
+            <div class="input-filed">
+              <label for="Address">Address</label><br>
+              <input for="Address" id="Address" placeholder="Enter your Address"><span id="add" style="color: red; display:none;">please enter the address</span>
+            </div>
+            <div class="error"></div>
+
+              <div class="input-filed">
+                  <label for="Confirm-password"> Confirm Password</label><br>
+                  <input for="Confirm-password" id="Confirm-password"type="password" placeholder="Enter you Confirm Password"><span id="cpassword" style="color: red; display:none;">please enter Confirm password </span>
+              </div>
+              <div class="error"></div>
+        </div>
+    
+    </div>
+    <div class="Gender">
+      <p>Gender</p>
+      
+      <input id="male"type="radio" name="gender">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender">
+      <label for="female">female </label>
+      <input type="radio" id="female" name="gender">
+      <label for="female">Others</label><br>
+      <span id="gendermale" style="color: red; display:none;">Please Enter the Gender </span>
+      
+      <div class="para">
+         <p>Online registration forms make it easy to plan your next event such as conferences, workshops or classes. 
+         Get started by editing a sample registration template, 
+         then send an email to your list and watch the pile up!</p>
+       </div>
+       
+       <div class="butten">
+        <button type="submit">REGESTER</button>
+       </div>
+       </form>
+
+
+  </div>   
+    </section>
+    <script src="js/main.js">
+    </script>
+ </body>
+ </html>
